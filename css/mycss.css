@@ -1,4 +1,79 @@
 
+
+.wrapper_bg{
+    margin: 0;
+    position: relative;
+    width: 30vw;
+    height: 17vw;
+    left: 5%;
+    top: 50%;
+    transform: translate(-60%, -50%);
+    z-index:-10;
+}
+
+
+ h1.upperheadline {
+    margin: 0;
+
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    width: 30vw;
+    height: 12vw;
+    transform: translate(-90%, -50%);
+    padding-right: 20px;
+    color: white;
+            font-size: 60px;
+            line-height: 12vw;
+            text-align: right;
+            font-style: italic;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 100;
+            text-shadow:#000 3px 4px 5px
+    
+}
+
+
+
+
+
+.login {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index:10;
+}
+
+.login input {
+    height: 25px;
+    font-size: 15px;
+    line-height: 25px;
+    width: 10em;
+    border-radius: 20px;
+    border: none;
+    padding: 5px 10px;
+    box-shadow: inset 0 0 3px 1px rgba(0, 0, 0, 0.5);
+    outline: none;
+}
+
+.login .button {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    height: 15px;
+    line-height: 15px;
+    padding: 5px 10px;
+    background-color: cornflowerblue;
+    border-radius: 20px;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 0 1px white;
+    transition: box-shadow 1s;
+}
+
+.login .button:active {
+    box-shadow: inset 0 0 3px 1px rgba(0, 0, 0, 0.5);
+}
+
 //////////////////////////////////////下拉菜单/////////////////////////////////
 .menu {
     height: 58px;
@@ -241,29 +316,29 @@ ul {
 
 #wrap {
   position:relative;
-  width:380px;
-  hight:500px;
+  width:1104px;
+  height:682px;
   padding-left:0;
   overflow:hidden;
 }
 
 .bigpic{
-	width:380px;
-	height:500px;
+	width:1104px;
+	height:682px;
 }
 
 #slider {
-  width:1140px;
-  height:500px;
+  width:3312px;
+  height:682px;
   margin-left:0;
   float:left;
-  -webkit-animation:slide1 6s ease-out infinite;
+  -webkit-animation:slide1 12s ease-out infinite;
 }
 
 #slider li {
   float:left;
-  width:380px;
-  height:500px;
+  width:1104px;
+  height:682px;
 }
 
 #slider li:nth-child(1) {
@@ -280,34 +355,34 @@ ul {
 
 /*创建三种动画策略*/
 @-webkit-keyframes slide1 {
-  0% { margin-left:-40px;}
-  23% { margin-left:-40px;}
-  33% { margin-left:-420px;}
-  56% { margin-left:-420px;}
-  66% { margin-left:-800px;}
-  90% { margin-left:-800px;}
-  100% {margin-left:-40px;}
-}
-
-@-webkit-keyframes slide2 {
-  0% { margin-left:-420px;}
-  23% { margin-left:-420px;}
-  33% { margin-left:-800px;}
-  56% { margin-left:-800px;}
-  66% { margin-left:-40px;}
-  90% { margin-left:-40px;}
-  100% {margin-left:-420px;}
-}
-
-@-webkit-keyframes slide3 {
-  0% { margin-left:-800px;}
-  23% { margin-left:-800px;}
-  33% { margin-left:-40px;}
-  56% { margin-left:-40px;}
-  66% { margin-left:-800px;}
-  90% { margin-left:-800px;}
-  100% {margin-left:-800px;}
-}
+	0% { margin-left:-40px;}
+	23% { margin-left:-40px;}
+	33% { margin-left:-1144px;}
+	56% { margin-left:-1144px;}
+	66% { margin-left:-2248px;}
+	90% { margin-left:-2248px;}
+	100% {margin-left:-40px;}
+  }
+  
+  @-webkit-keyframes slide2 {
+	0% { margin-left:-1144px;}
+	23% { margin-left:-1144px;}
+	33% { margin-left:-2248px;}
+	56% { margin-left:-2248px;}
+	66% { margin-left:-40px;}
+	90% { margin-left:-40px;}
+	100% {margin-left:-1144px;}
+  }
+  
+  @-webkit-keyframes slide3 {
+	0% { margin-left:-2248px;}
+	23% { margin-left:-2248px;}
+	33% { margin-left:-40px;}
+	56% { margin-left:-40px;}
+	66% { margin-left:-2248px;}
+	90% { margin-left:-2248px;}
+	100% {margin-left:-2248px;}
+  }
 
 
 /*修改动画名称*/
@@ -332,12 +407,12 @@ ul {
 
 #l02:active ~ #wrap #slider {
   -webkit-animation-name:none;
-  margin-left:-380px;
+  margin-left:-1104px;
 }
 
 #l03:active ~ #wrap #slider {
   -webkit-animation-name:none;
-  margin-left:-760px;
+  margin-left:-2208px;
 }
 
 /* 隐藏Input按钮*/

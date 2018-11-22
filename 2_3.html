@@ -6,7 +6,7 @@
     <title>Love. Dive.</title><link href="./css/mycss.css" rel="stylesheet" type="text/css" media="all" />
     <style>
         body {
-            background-image: url('./images/0.jpg');
+            background-image: url('./images/bg_3.jpg');
             background-size: 100% auto;
             background-repeat: no-repeat;
             background-position: center;
@@ -15,39 +15,54 @@
 
         .wrapper{
             margin: 0;
-
             position: relative;
-            width: 60vw;
+            width: 30vw;
             height: 17vw;
             left: 5%;
             top: 50%;
-            transform: translate(-50%, -50%);
+            transform: translate(-60%, -50%);
         }
-        
         .wrapper2{ 
+    background-image: url('./images/translucence.png');
+    background-repeat: repeat;
+    margin: 0;
+    width: 80%;
+    height: 25%;
+    left: 50%;
+    top: 0px;
+    bottom: 0px;
+    transform: translate(-40%, 250%);
+       position: absolute;
+}
+        .upper{ 
 			background-image: url('./images/translucence.png');
             background-repeat: repeat;
 			margin: 0;
-            width: 60vw;
-            height: 100%;
+            width: 100%;
+            height: 8%;
 			left: 50%;
             top: 0px;
 			bottom: 0px;
 			transform: translate(-50%, 0%);
-   			position: absolute;
+   			position: fixed;
         }
-            .wrapper2{ 
-			background-image: url('./images/translucence.png');
-            background-repeat: repeat;
-			margin: 0;
-            width: 60vw;
-            height: 100%;
-			left: 50%;
-            top: 0px;
-			bottom: 0px;
-			transform: translate(-50%, 0%);
-   			position: absolute;
-        }
+
+
+        .deeper{ 
+    background-image: url('./images/translucence.png');
+    background-repeat: repeat;
+    margin: 0;
+    width: 60%;
+    height: 40%;
+    left: 50%;
+    top: 0px;
+    bottom: 0px;
+    transform: translate(-50%, 200%);
+       position: absolute;
+}
+
+
+           
 
         h1.headline {
             margin: 0;
@@ -157,6 +172,17 @@
     </style>
 </head>
 <body>
+<div class="login">
+        <input type="email" placeholder="E-Mail">
+        <input type="password" placeholder="Password">
+        <a href="#" class="button">Log In</a>
+    </div>
+<div class="upper">
+<td><img src="images/logo.png" width="65" height="80" alt=""/>&nbsp;</td>
+<h1 class="upperheadline">Love. Dive.</h1>
+</div>
+<div class="deeper">
+</div>
 <div class="wrapper">
   <h1 class="headline"></h1>
         <h1 class="subhead i0"><a href="2_1.html">你真的了解潜水吗</a></h1>
@@ -166,36 +192,7 @@
         <h2 class="subhead i10"><a href="3_8.html">俱乐部&出行公告</a></h2>
         <h2 class="subhead i11"><a href="3_9.html">潜水商店</a></h2>
     </div>
-<div class="wrapper2">
 
 
-
-<table width="50%" border="1">
-  <tbody>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-  </tbody>
-</table>
- </div>
-<div id="wrap">
-  <ul id="slider">
-    <li><img src="./images/0.jpg" class="bigpic"/></li>
-    <li><img src="./images/1.jpg" class="bigpic"/></li>
-    <li><img src="./images/2.jpg" class="bigpic"/></li>
-  </ul>
-</div>
 </body>
 </html>

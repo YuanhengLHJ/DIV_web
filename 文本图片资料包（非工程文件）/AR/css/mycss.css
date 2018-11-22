@@ -583,31 +583,31 @@ ul {
 @-webkit-keyframes slide1 {
   0% { margin-left:-40px;}
   23% { margin-left:-40px;}
-  33% { margin-left:-420px;}
-  56% { margin-left:-420px;}
-  66% { margin-left:-800px;}
-  90% { margin-left:-800px;}
+  33% { margin-left:-1144px;}
+  56% { margin-left:-1144px;}
+  66% { margin-left:-2248px;}
+  90% { margin-left:-2248px;}
   100% {margin-left:-40px;}
 }
 
 @-webkit-keyframes slide2 {
-  0% { margin-left:-420px;}
-  23% { margin-left:-420px;}
-  33% { margin-left:-800px;}
-  56% { margin-left:-800px;}
+  0% { margin-left:-1144px;}
+  23% { margin-left:-1144px;}
+  33% { margin-left:-2248px;}
+  56% { margin-left:-2248px;}
   66% { margin-left:-40px;}
   90% { margin-left:-40px;}
-  100% {margin-left:-420px;}
+  100% {margin-left:-1144px;}
 }
 
 @-webkit-keyframes slide3 {
-  0% { margin-left:-800px;}
-  23% { margin-left:-800px;}
+  0% { margin-left:-2248px;}
+  23% { margin-left:-2248px;}
   33% { margin-left:-40px;}
   56% { margin-left:-40px;}
-  66% { margin-left:-800px;}
-  90% { margin-left:-800px;}
-  100% {margin-left:-800px;}
+  66% { margin-left:-2248px;}
+  90% { margin-left:-2248px;}
+  100% {margin-left:-2248px;}
 }
 
 
