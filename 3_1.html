@@ -5,143 +5,226 @@
     <title>Love. Dive.</title>
     <style>
         body {
-            background-image: url('./images/0.jpg');
-            background-size: 100% auto;
+            margin: 0;
+            padding: 0;
+
+            background-image: url('./images/1.jpg');
+            background-size: auto 100%;
             background-repeat: no-repeat;
             background-position: center;
         }
 
-        .wrapper {
-            margin: 0;
-
-            position: relative;
-            width: 60vw;
-            height: 17vw;
-            left: 5%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        h1.headline {
-            margin: 0;
-
-            position: absolute;
-            right: 50%;
-            top: 50%;
-            width: 30vw;
-            height: 17vw;
-            transform: translate(0, -50%);
-            border-right: 1px solid white;
-            padding-right: 20px;
-
-
+        .sidebar {
+            position: fixed;
             color: white;
-            font-size: 60px;
-            line-height: 12vw;
-            text-align: right;
-            font-style: italic;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            font-weight: 100;
+            top: 50%;
+            transform: translateY(-50%);
         }
 
-        h1.subhead {
-            margin: 0;
+        .nav {
+            margin: 0 0 0 40px;
+            padding: 0;
+            border-left: 1px solid white;
+        }
 
-            position: absolute;
-            left: 50%;
-
+        .nav, .nav ul {
+            list-style-type: none;
+        }
+        
+        .nav > li {
             height: 4vw;
-
-            padding-left: 20px;
-            padding-right: 20px;
-
-            border-left: 0 solid white;
-
+            padding: 0 20px;
             font-size: 20px;
             line-height: 4vw;
             text-align: left;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-weight: 400;
-
             transition: background-color 1s, border-left 1s;
         }
 
-        h2.subhead {
-            margin: 0;
+        .nav ul {
+            padding: 0;
+        }
 
-            position: absolute;
-            left: 50%;
-
+        .nav ul li {
             height: 2vw;
-
-            padding-left: 20px;
-            padding-right: 20px;
-
-            border-left: 0 solid white;
-
-            font-size: 10px;
+            padding: 0 20px;
+            font-size: 14px;
             line-height: 2vw;
             text-align: left;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-weight: 400;
-
             transition: background-color 1s, border-left 1s;
         }
-
-        h1.subhead a {
-            color: white;
-            opacity: 0.8;
-            text-decoration: none;
-        }
-
-        h2.subhead a {
-            color: white;
-            opacity: 0.8;
-            text-decoration: none;
-        }
-
-        h1.subhead:hover {
+        
+        .nav li:hover {
             background-color: rgba(255, 255, 255, 0.5);
             border-left: 10px solid white;
         }
 
-        h2.subhead:hover {
-            background-color: rgba(255, 255, 255, 0.5);
+        .nav li.selected {
+            background-color: rgba(0, 51, 113, 0.5);
             border-left: 10px solid orange;
+            color:white;
         }
 
-        h1.subhead.i0 {
-          top: 0;
-          background-color: rgba(255, 255, 255, 0.5);
-          border-left: 10px solid white;
-          color:white;
+        .nav a {
+            text-decoration: none;
+            color: white;
         }
 
-        h2.subhead.i3 {
-          top: 3vw;
-          background-color: rgba(0, 51, 113, 1);
-          border-left: 10px solid orange;
-          color:white;
-          box-shadow:5px 5px 5px #004A80;
-          <--text-shadow: 5px 5px 5px #FF0000;-->
+        .line {
+            position: fixed;
+            content: '';
+            background-color: white;
+            width: 5px;
+            height: 100%;
+            left: 50%;
+            transform: translateX(-50%);
         }
-        h2.subhead.i4 { top: 5vw; }
-        h2.subhead.i5 { top: 7vw; }
 
-        h1.subhead.i1 { top: 9vw; }
-        h1.subhead.i2 { top: 13vw; }
+        p.headline {
+            font-size: 25px;
+        }
+
+
+        ul.timeline {
+            width: 100%;
+
+            margin: 0;
+            padding: 0;
+
+            list-style-type: none;
+        }
+        
+        .timeline li.cell {
+            color: black;
+            position: relative;
+            width: 27vw;
+            padding: 25px;
+        }
+
+        .timeline li.cell:nth-of-type(odd) {
+            left: 50%;
+            transform: translateX(-100%);
+        }
+
+        .timeline li.cell:nth-of-type(even) {
+            left: 50%;
+        }
+
+        .timeline li.cell ::after {
+            content: ' ';
+            width: 25px;
+            height: 25px;
+            background-color: white;
+            border-radius: 20px;
+            position: absolute;
+            top: 50%;
+            box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
+        }
+
+        .timeline li.cell:nth-of-type(odd) ::after {
+            left: 100%;
+            transform: translate(-50%, -50%);
+        }
+
+        .timeline li.cell:nth-of-type(even) ::after {
+            right: 100%;
+            transform: translate(50%, -50%);
+        }
+
+        .timeline .cell p {
+            margin: 0;
+            padding: 15px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
+        }
+
     </style>
 </head>
 <body>
-    <div class="wrapper">
-        <h1 class="headline"></h1>
-        <h1 class="subhead i0"><a href="2_1.html">你真的了解潜水吗</a></h1>
-        <h2 class="subhead i3" >潜水运动的故事</h2>
-        <h2 class="subhead i4"><a href="3_2.html">准备与原则</a></h2>
-        <h2 class="subhead i5"><a href="3_3.html">潜水对身体机能的影响</a></h2>
-        <h1 class="subhead i1"><a href="2_2.html">开启你的潜水之旅</a></h1>
-        <h1 class="subhead i2"><a href="2_3.html">最新潜水新闻资讯</a></h1>
+    <div class="sidebar">
+        <ul class="nav">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="2_1.html">你真的了解潜水吗</a></li>
+            <ul>
+                <li class="selected"><a href="#">潜水的历史</a></li>
+                <li><a href="3_2.html">准备与原则</a></li>
+                <li><a href="3_3.html">潜水对身体机能的影响</a></li>
+            </ul>
+            
+            <li><a href="2_2.html">开启你的潜水之旅</a></li>
+            <!--
+            <ul>
+                <li><a href="#">潜友潜水日程分享</a></li>
+                <li><a href="#">潜水课程</a></li>
+                <li><a href="#">潜水定位</a></li>
+            </ul>
+            -->
+            <li><a href="2_3.html">最新潜水新闻资讯</a></li>
+            <!--
+            <ul>
+                <li><a href="#">新装备测评</a></li>
+                <li><a href="#">俱乐部 & 新闻公告</a></li>
+                <li><a href="#">潜水商店</a></li>
+            </ul>
+            -->
+        </ul>
     </div>
+
+    <div class="line"></div>
+    <ul class="timeline">
+        <li class="cell">
+            <p class="headline">潜水的历史</p>
+        </li>
+        <li class="cell">
+            <p>神游海底是人们由来已久的愿望，早在 2800 年前，米索不达文化全盛时期，阿兹里亚帝国的军队用羊皮袋冲气，由水中攻击敌军，这也许就是潜水的老祖宗了。</p>
+        </li>
+        <li class="cell">
+            <p>距今 1700 年前的中国史书《魏志倭人传》中，就已经有了海边渔夫在海里潜水捕鱼的场面描写。</p>
+        </li>
+        <li class="cell">
+            <p>到了 1720 年，一个英国人利用一只定做的木桶潜到水下 20 公尺深的地方成功地进行海底打捞。</p>
+        </li>
+        <li class="cell">
+            <p>而今天职业潜水的前身，则要算 160 年前英国的郭蒙贝西发明的从水上接帮浦运送空气的机械潜水，也就是头盔式潜水。</p>
+        </li>
+        <li class="cell">
+            <p>这种潜水于 1854 年首次在日本出现。1924 年开始使用玻璃做潜水镜，并利用帮浦从水面上吸取空气的“面罩式潜水器”，这是水肺潜水器材的前身。</p>
+        </li>
+        <li class="cell">
+            <p>就在这年日本人使用面罩式潜水器潜入地中海底 70 公尺，成功的捞起沉船八阪号内的金块，震惊了全世界。</p>
+        </li>
+        <li class="cell">
+            <p>在二次世界大战期间，开发了一种特殊军事用的“空气罩潜水器”，采用的是密闭循环式，并有空气瓶的装置。</p>
+        </li>
+        <li class="cell">
+            <p>二战末期，法国开发了开放式“空气潜水器”，1945 年前后这种潜水器在欧美非常流行。</p>
+        </li>
+        <li class="cell">
+            <p>近几年来由于潜水器材的进步，带动潜水运动蓬勃发展，投身于潜水和喜欢潜水运动的人也越来越多。</p>
+        </li>
+    </ul>
+
+    
+        <!--
+        <h1>潜水发展</h1>
+        <p>
+            随着潜水运动风靡全球，走进水中世界已不再是一个童话般的心愿，而是一份令您惊喜不已的浪漫。
+            您无需事先学习潜水，便可以在真正的水域里感觉到潜水的新奇，想象一下当您徐徐潜入清凉明澈的水中，阳光被水折射成无数个星星，在眼前不断地闪烁、耀动。
+            当五彩的鱼儿，亲昵的依偎在身边，您会欣喜地感觉到自己置身于一个美妙的新奇世界，尽情欣赏五颜六色千姿百态的海底生物；
+            当成串的气泡，欢快地漂过耳际，您会惊奇地发现您正轻松地扇动脚蹼，自如地悬浮于水中，真心体味水中世界的奇妙、浪漫、自在、开心。
+            潜水员与鱼群相互交织
+            潜水的好处不仅在于水中的奇异世界给人的精神带来的巨大享受，而且更重要的是能够提高并改善人体的心肺功能，在美国及日本，潜水运动甚至被作为一种治疗癌症的辅助手段；
+            据科学论证，水对人体的均衡压力有助于血液循环，水下长时间的吸氧可以有效地杀死癌细胞，并抑制癌细胞的扩散。
+            但因为潜水的费用较高，一般人承受不了。虽然基础培训费只有两千块左右，但相继而来的配置器材与旅费却不是人人都能消化的。
+            一套好的装备，普通的两、三万，高级的十几万。如果想去好的自然海域，近的有马来西亚、泰国，远的有澳大利亚、红海等等。
+           
+        </p>
+    -->
 
 </body>
 </html>
+
