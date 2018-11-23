@@ -2,10 +2,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Love. Dive.</title>
+    <title>Love. Dive.</title><link href="./css/mycss.css" rel="stylesheet" type="text/css" media="all" />
     <style>
         body {
-            background-image: url('./images/0.jpg');
+            background-image: url('./images/bg_2.jpg');
             background-size: 100% auto;
             background-repeat: no-repeat;
             background-position: center;
@@ -14,15 +14,64 @@
         .wrapper {
             margin: 0;
 
-            position: relative;
+            position: fixed;
             width: 60vw;
             height: 22vw;
             left: 5%;
             top: 50%;
             transform: translate(-50%, -50%);
         }
+		  .wrapper2{
+    background-image: url('./images/translucence.png');
+    background-repeat: repeat;
+    margin: 0;
+    width: 80%;
+    height: 25%;
+    left: 50%;
+    top: 0px;
+    bottom: 0px;
+    transform: translate(-40%, 250%);
+       position: absolute;
+}
+        .upper{
+			background-image: url('./images/translucence.png');
+            background-repeat: repeat;
+			margin: 0;
+            width: 100%;
+            height: 8%;
+			left: 50%;
+            top: 0px;
+			bottom: 0px;
+			transform: translate(-50%, 0%);
+   			position: fixed;
+        }
 
-        h1.headline {
+
+        .deeper{
+   background-color: rgba(0, 51, 113, 0.5);
+    margin: 0;
+    width: 30%;
+    height: 30%;
+    left: 40%;
+    top: 0px;
+    bottom: 0px;
+    transform: translate(80%, 195%);
+       position: absolute;
+			box-shadow: inset 0 0 3px 3px orange;
+}
+
+p.contexts
+		{
+			 margin:3%;
+			 color: white;
+            font-size: 25px;
+            line-height: 40px;
+            text-align: left;
+            font-family:YouYuan, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 900;
+		}
+
+    h1.headline {
             margin: 0;
 
             position: absolute;
@@ -127,6 +176,7 @@
         h1.subhead.i2 { top: 18vw; }
 
         h1.subhead.i10 {top:0;}
+
     </style>
 </head>
 <body>
@@ -140,6 +190,30 @@
         <h2 class="subhead i8"><a href="3_6.html">潜水定位</a></h2>
         <h1 class="subhead i2"><a href="2_3.html">最新潜水新闻资讯</a></h1>
     </div>
+	<div class="login">
+        <input type="email" placeholder="E-Mail">
+        <input type="password" placeholder="Password">
+        <a href="#" class="button">Log In</a>
+    </div>
+<div class="upper">
+<td><img src="images/logo.png" width="65" height="80" alt=""/>&nbsp;</td>
+<h1 class="upperheadline">Love. Dive.</h1>
+</div>
+<div class="deeper">
+	<p class="contexts">　　约上好友，去往海边，学习一个让你一生难忘的潜水课程！</p>
+
+	<p class="contexts">　　还在纠结？即刻出发！</p>
+	<table width="100%" border="0" style=" text-align:center; " cellspacing="20px">
+  <tbody>
+    <tr>
+      <td><a href="3_4.html"><img src="./images/2-2-b1.jpg" width="150" height="75"></a>&nbsp;</td>
+      <td><a href="3_5.html"><img src="./images/2-2-b2.jpg" width="150" height="75"></a>&nbsp;</td>
+      <td><a href="3_6.html"><img src="./images/2-2-b3.jpg" width="150" height="75"></a>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
 
 </body>
 </html>

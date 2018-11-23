@@ -3,48 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Love. Dive.</title>
+    <title>Love. Dive.</title><link href="./css/mycss.css" rel="stylesheet" type="text/css" media="all" />
     <style>
         body {
-            background-image: url('./images/0.jpg');
+            background-image: url('./images/bg_3.jpg');
             background-size: 100% auto;
             background-repeat: no-repeat;
             background-position: center;
         }
 
 
-        .wrapper{
+        .wrapper {
             margin: 0;
 
-            position: relative;
+            position: fixed;
             width: 60vw;
-            height: 17vw;
+            height: 22vw;
             left: 5%;
             top: 50%;
             transform: translate(-50%, -50%);
         }
-        
-        .wrapper2{ 
+        .wrapper2{
+    background-image: url('./images/translucence.png');
+    background-repeat: repeat;
+    margin: 0;
+    width: 80%;
+    height: 25%;
+    left: 50%;
+    top: 0px;
+    bottom: 0px;
+    transform: translate(-40%, 250%);
+       position: absolute;
+}
+        .upper{
 			background-image: url('./images/translucence.png');
             background-repeat: repeat;
 			margin: 0;
-            width: 60vw;
-            height: 100%;
+            width: 100%;
+            height: 8%;
 			left: 50%;
             top: 0px;
 			bottom: 0px;
 			transform: translate(-50%, 0%);
-   			position: absolute;
+   			position: fixed;
         }
 
-        h1.headline {
+
+        .deeper{
+   background-color: rgba(0, 51, 113, 0.5);
+    margin: 0;
+    width: 20%;
+    height: 70%;
+    left: 50%;
+    top: 0px;
+    bottom: 0px;
+    transform: translate(140%, 40%);
+       position: absolute;
+			box-shadow: inset 0 0 3px 3px orange;
+}
+	p.contexts
+		{
+			 margin:3%;
+			 color: white;
+            font-size: 25px;
+            line-height: 40px;
+            text-align: left;
+            font-family:YouYuan, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 900;
+		}
+
+    h1.headline {
             margin: 0;
 
             position: absolute;
             right: 50%;
             top: 50%;
             width: 30vw;
-            height: 17vw;
+            height: 22vw;
             transform: translate(0, -50%);
             border-right: 1px solid white;
             padding-right: 20px;
@@ -125,28 +160,67 @@
             border-left: 10px solid orange;
         }
 
-        h1.subhead.i0 { top: 0;}
+        h1.subhead.i0 { top: 4vw;}
 
-        h2.subhead.i9 { top: 11vw; }
-        h2.subhead.i10 { top: 13vw; }
-        h2.subhead.i11 { top: 15vw; }
+        h2.subhead.i9 { top: 16vw; }
+        h2.subhead.i10 { top: 18vw; }
+        h2.subhead.i11 { top: 20vw; }
 
-        h1.subhead.i1 { top: 4vw;
+        h1.subhead.i1 { top: 8vw;
         }
         h1.subhead.i2 {
-          top: 8vw;
+          top: 12vw;
           background-color: rgba(0, 51, 113, 0.5);
           border-left: 10px solid orange;
           color:white;
           box-shadow:5px 5px 5px #004A80;
           <--text-shadow: 5px 5px 5px #FF0000;-->
           }
+        h1.subhead.i10{
+          top:0;
+        }     
+
+
+		table.t1
+		{
+			box-shadow:5px 5px 5px #004A80;
+		}
 
     </style>
 </head>
 <body>
+<div class="login">
+        <input type="email" placeholder="E-Mail">
+        <input type="password" placeholder="Password">
+        <a href="#" class="button">Log In</a>
+    </div>
+<div class="upper">
+<td><img src="images/logo.png" width="65" height="80" alt=""/>&nbsp;</td>
+<h1 class="upperheadline">Love. Dive.</h1>
+</div>
+<div class="deeper">
+	<p class="contexts">　　大海深处的神秘，总让人着迷。掌握了潜水技能的你，却未必止步于当下的美丽。</p>
+	<p class="contexts">　　是什么成全了今日的自己？又是什么让明日的我们相聚？</p>
+	<p class="contexts">　　加入俱乐部，了解更多新鲜信息，让自己更加专业感受潜水的魅力！</p>
+	<table  width="100%" border="0" style=" text-align:center; " cellspacing="20px">
+
+  <tbody>
+    <tr>
+      <td><a href="3_7.html"><img src="./images/2-3-b1.jpg" width="150" height="75"></a>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="3_8.html"><img src="./images/2-3-b2.jpg" width="150" height="75"></a>&nbsp;</td>
+    </tr>
+    <tr>
+      <td><a href="3_9.html"><img src="./images/2-3-b3.jpg" width="150" height="75"></a>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
 <div class="wrapper">
   <h1 class="headline"></h1>
+        <h1 class="subhead i10"><a href="index.html">首页</a></h1>
         <h1 class="subhead i0"><a href="2_1.html">你真的了解潜水吗</a></h1>
         <h1 class="subhead i1"><a href="2_2.html">开启你的潜水之旅</a></h1>
         <h1 class="subhead i2">最新潜水新闻资讯</h1>
@@ -154,7 +228,7 @@
         <h2 class="subhead i10"><a href="3_8.html">俱乐部&出行公告</a></h2>
         <h2 class="subhead i11"><a href="3_9.html">潜水商店</a></h2>
     </div>
-<div class="wrapper2">
- </div>
+
+
 </body>
 </html>

@@ -1,305 +1,79 @@
-BODY {
-text-align:center;
-background-image: URL(../pic/背景1.jpg);
-background-position: center center;
-background-repeat: no-repeat;
-background-size: 100%;
-cursor:all-scroll;
-background-attachment:fixed
-}
-
-#neirong{width:950px;hight:100%;margin:0 auto;text-align:left;color: #fff;
-
-}
-#daohang
-{
-	float:right;
-	margin-right:100px;
-	margin-top:0px;
-	padding-left:30px;
-	font-size: 28px;
-	border-bottom:1px solid white;
-	}
-#mainpage{
-	position: relative;
-	left:85px;
-
-}
-#people{
-	width: 200px;
-	height: 300px;
-	text-align: right;
-	position: relative;
-	right: -1130px;
-	color: #fff;
-	
-	
-}
-#ren{
-	position: relative;
-	top: -20px;
-	line-height: 30px;
-}
-#logo{
-	position: relative;
-	top: 0px;
-	left:-380px;
-}
-
-#renphoto{float:left;width:40%;}
-#rentext{float:right;width:50%;color:white;}
-
-#yejiao{
-	position: relative;
-	left: -560px;
-	top: 560px;
-	color: #fff;
-	font-size:24px;
-}
-
-	#lishi{
-	position: relative;
-	top: -280px;
-	left:0px;
-	}
-	#xianzhuang{
-	position: relative;
-	top: -120px;
-	left:-140px;
-	}
-	#weilai{
-	position: relative;
-	top: 20px;
-	left:-140px;
-	}
-	#xinshi{
-	position: relative;
-	top: 160px;
-	left:0px;
-	}
-	#gongsi{
-	position: relative;
-	top: -415px;
-	left:630px;
-	}
-	#tiyan{
-	position: relative;
-	top:  -255px;
-	left: 770px;
-	}
-	#tedian{
-	position: relative;
-	top: -115px;
-	left:770px;
-	}
-	#shili{
-	position: relative;
-	top: 21px;
-	left: 630px;
-	}
-	#denglu{
-	position: relative;
-	top: 155px;
-	left: 348px;
-	}
-	#login{
-	width: 400px;
-	position: relative;
-	left: 262px;
-	top: -15px;
-	background-color: rgb(33,33,33);
-	opacity: 0.6;
-	filter: alpha(opacity=70);
-	}
-#inputs{
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	border: 0px;
-	text-decoration: none;
-}
-
-#strong{
-	font-weight:bolder;
-}
-.mapdiv{
-	float:left;
-	color:#fff;
-	width:300px;
-	height::900px;
-}
-
-#nav { 
-   width:350px;
-   height: 400px;
-   position:fixed;
-   left:200px;
-   top:30% ;
-   z-index:10;}
-#nav2 { 
-   width:350px;
-   height: 400px;
-   position:fixed;
-   right:80px;
-   top:30% }  
-
-//////////////////#renlogo{float:left;width:30%;}
-#mingyan{float:right;width:70%;color:white;text-align:left;font-size:26px;line-height:1.5;}
 
 
-#gongzuoren {
-display: block;
-position: fixed;
-left: 50px;
-bottom: 30%;
-width: 100px;
-padding: 5px;
--moz-border-radius: 4px;
--webkit-border-radius: 4px;
-border-radius: 4px;
-background: transparent;
-color: #E8E8E8;
+.wrapper_bg{
+    margin: 0;
+    position: relative;
+    width: 30vw;
+    height: 17vw;
+    left: 5%;
+    top: 50%;
+    transform: translate(-60%, -50%);
+    z-index:-10;
 }
 
-#yingyonglan{
-display: block;
-position: fixed;
-left: 30px;
-bottom: 30%;
-width: 200px;
-padding: 5px;
--moz-border-radius: 4px;
--webkit-border-radius: 4px;
-border-radius: 4px;
-background: transparent;
-color: #E8E8E8;	
+
+ h1.upperheadline {
+    margin: 0;
+
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    width: 30vw;
+    height: 12vw;
+    transform: translate(-90%, -50%);
+    padding-right: 20px;
+    color: white;
+            font-size: 60px;
+            line-height: 12vw;
+            text-align: right;
+            font-style: italic;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 100;
+            text-shadow:#000 3px 4px 5px
+    
 }
 
-#yingyongtext
-{
-	color:white;
-	text-indent:2em;
-	line-height:1.3;
-	}
-	
-#yingyongtitle{
-	.h1 color:red;
+
+
+
+
+.login {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index:10;
 }
 
-#putin{
-	
-	width:150px;
-position:relative;
-left:200px;
-background-color: rgb(0,0,0);
-	opacity: 0.6;
-	filter: alpha(opacity=70);
-}
-#forget{
-	position:relative;
-	top:-190px;
-	left:20px;
-	text-decoration:none;
-	font-family:'Times New Roman', Times, serif;
-	
-}
-#xuanze{
-	position:relative;
-	top:-80px;
-	left:110px;
-	
-}
-#Register
-{	position:relative;
-	top:-10px;
-	left:95px;
-	font-family:'Times New Roman', Times, serif;
-	text-decoration:none;
-	}
-
-#copyright
-{
-	width:1906px;
-	position:relative;
-	left:-479px;
-	text-align:center;
-	padding-top:20px;
-	padding-bottom:80px;
-	margin-bottom:-10px;
-	
-	background-color: rgb(0,0,0);
-	opacity: 0.8;
-	filter: alpha(opacity=70);
-	}
-
-.lianjie{
-	color: #FFF;
-	font-family : 微软雅黑,宋体;
-	text-decoration: none;	
-	font-size: 14px;
-	text-decoration:underline;
+.login input {
+    height: 25px;
+    font-size: 15px;
+    line-height: 25px;
+    width: 10em;
+    border-radius: 20px;
+    border: none;
+    padding: 5px 10px;
+    box-shadow: inset 0 0 3px 1px rgba(0, 0, 0, 0.5);
+    outline: none;
 }
 
-.lianjie1{
-	color: #FFF;
-	font-family : 微软雅黑,宋体;
-	text-decoration: none;	
-	font-size: 22px;
-	text-decoration:none;
+.login .button {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    height: 15px;
+    line-height: 15px;
+    padding: 5px 10px;
+    background-color: cornflowerblue;
+    border-radius: 20px;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 0 1px white;
+    transition: box-shadow 1s;
 }
 
-.ico{
-	float:right;
-	position:relative;
-	top:-18px;
-	left:-128px;
-}
-	
-.leftpic{
-	float:left;
-	width:50%;
-	padding: 0px 20px 0px 0px;
-}
-.rightpic{
-	float:right;
-	width:50%;
-	padding: 0px 0px 0px 20px;
-}
-.zhuyeanniu{
-	color: #FFF;
-	font-family : 微软雅黑,宋体;
-	font-weight: bold;
-	text-decoration: none;
-	font-size: 26px;
-	text-shadow: #000 3px 3px 3px;
-}
-.ciyeanniu{
-	color: #FFF;
-	font-family : 微软雅黑,宋体;
-	text-decoration: none;	
-	font-size: 22px;
-}
-.zianniu{
-	color: #FFF;
-	font-family : 微软雅黑,宋体;
-	text-decoration: none;	
-	font-size: 18px;
+.login .button:active {
+    box-shadow: inset 0 0 3px 1px rgba(0, 0, 0, 0.5);
 }
 
-.zhuyeren{
-	color: #FFF;
-	font-family : 微软雅黑,宋体;
-	text-decoration: none;	
-	font-size: 26px;
-}
-h1{
-	font-size: 30px;
-	font-family:"黑体";
-}
-p{
-	text-indent:2em;
-	font-size:22px;
-	font-family : 微软雅黑,宋体;
-	line-height:1.4em;
-}
 //////////////////////////////////////下拉菜单/////////////////////////////////
 .menu {
     height: 58px;
@@ -542,29 +316,29 @@ ul {
 
 #wrap {
   position:relative;
-  width:380px;
-  hight:500px;
+  width:1104px;
+  height:682px;
   padding-left:0;
   overflow:hidden;
 }
 
 .bigpic{
-	width:380px;
-	height:500px;
+	width:1104px;
+	height:682px;
 }
 
 #slider {
-  width:1140px;
-  height:500px;
+  width:3312px;
+  height:682px;
   margin-left:0;
   float:left;
-  -webkit-animation:slide1 6s ease-out infinite;
+  -webkit-animation:slide1 12s ease-out infinite;
 }
 
 #slider li {
   float:left;
-  width:380px;
-  height:500px;
+  width:1104px;
+  height:682px;
 }
 
 #slider li:nth-child(1) {
@@ -581,34 +355,34 @@ ul {
 
 /*创建三种动画策略*/
 @-webkit-keyframes slide1 {
-  0% { margin-left:-40px;}
-  23% { margin-left:-40px;}
-  33% { margin-left:-420px;}
-  56% { margin-left:-420px;}
-  66% { margin-left:-800px;}
-  90% { margin-left:-800px;}
-  100% {margin-left:-40px;}
-}
-
-@-webkit-keyframes slide2 {
-  0% { margin-left:-420px;}
-  23% { margin-left:-420px;}
-  33% { margin-left:-800px;}
-  56% { margin-left:-800px;}
-  66% { margin-left:-40px;}
-  90% { margin-left:-40px;}
-  100% {margin-left:-420px;}
-}
-
-@-webkit-keyframes slide3 {
-  0% { margin-left:-800px;}
-  23% { margin-left:-800px;}
-  33% { margin-left:-40px;}
-  56% { margin-left:-40px;}
-  66% { margin-left:-800px;}
-  90% { margin-left:-800px;}
-  100% {margin-left:-800px;}
-}
+	0% { margin-left:-40px;}
+	23% { margin-left:-40px;}
+	33% { margin-left:-1144px;}
+	56% { margin-left:-1144px;}
+	66% { margin-left:-2248px;}
+	90% { margin-left:-2248px;}
+	100% {margin-left:-40px;}
+  }
+  
+  @-webkit-keyframes slide2 {
+	0% { margin-left:-1144px;}
+	23% { margin-left:-1144px;}
+	33% { margin-left:-2248px;}
+	56% { margin-left:-2248px;}
+	66% { margin-left:-40px;}
+	90% { margin-left:-40px;}
+	100% {margin-left:-1144px;}
+  }
+  
+  @-webkit-keyframes slide3 {
+	0% { margin-left:-2248px;}
+	23% { margin-left:-2248px;}
+	33% { margin-left:-40px;}
+	56% { margin-left:-40px;}
+	66% { margin-left:-2248px;}
+	90% { margin-left:-2248px;}
+	100% {margin-left:-2248px;}
+  }
 
 
 /*修改动画名称*/
@@ -633,12 +407,12 @@ ul {
 
 #l02:active ~ #wrap #slider {
   -webkit-animation-name:none;
-  margin-left:-380px;
+  margin-left:-1104px;
 }
 
 #l03:active ~ #wrap #slider {
   -webkit-animation-name:none;
-  margin-left:-760px;
+  margin-left:-2208px;
 }
 
 /* 隐藏Input按钮*/

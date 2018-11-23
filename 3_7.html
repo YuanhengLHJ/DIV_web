@@ -2,25 +2,98 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Love. Dive.</title>
+    <title>Love. Dive.</title><link href="./css/mycss.css" rel="stylesheet" type="text/css" media="all" />
     <style>
         body {
-            background-image: url('./images/0.jpg');
+            background-image: url('./images/bg_3.jpg');
             background-size: 100% auto;
             background-repeat: no-repeat;
             background-position: center;
         }
+      .wrapper2{
+    background-image: url('./images/translucence.png');
+    background-repeat: repeat;
+    margin: 0;
+    width: 80%;
+    height: 80%;
+    left: 50%;
+    top: 0px;
+    bottom: 0px;
+    transform: translate(-40%, 20%);
+       position: absolute;
+}
+        .upper{
+			background-image: url('./images/translucence.png');
+            background-repeat: repeat;
+			margin: 0;
+            width: 100%;
+            height: 8%;
+			left: 50%;
+            top: 0px;
+			bottom: 0px;
+			transform: translate(-50%, 0%);
+   			position: fixed;
+        }
 
+
+        .deeper{
+    background-image: url('./images/translucence.png');
+    background-repeat: repeat;
+    margin: 0;
+    width: 60%;
+    height: 40%;
+    left: 50%;
+    top: 0px;
+    bottom: 0px;
+    transform: translate(-50%, 200%);
+       position: absolute;
+}
         .wrapper {
             margin: 0;
 
-            position: relative;
+            position: fixed;
             width: 60vw;
-            height: 17vw;
+            height: 22vw;
             left: 5%;
             top: 50%;
             transform: translate(-50%, -50%);
         }
+		.main {
+            width: 54vw;
+            position: absolute;
+			transform: translate(45%, 82px);
+            margin: 0;
+            padding: 30px 30px;
+            background-color: white;
+            box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
+
+			background-color: rgba(0, 51, 113, 0.5);
+        }
+
+        .main h1 {
+            font-weight: 400;
+            font-size: 30px;
+			 color: white;
+			font-weight: 800;
+        }
+
+        .main h2 {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            margin: 10px 0 0 0;
+            padding: 0 0 10px 0;
+            color: orange;
+			font-weight: 600;
+            border-bottom: 3px solid orange;
+        }
+
+        .main p {
+            margin: 10px 0;
+			color:white;
+			line-height:25px ;
+        }
+
 
         h1.headline {
             margin: 0;
@@ -29,7 +102,7 @@
             right: 50%;
             top: 50%;
             width: 30vw;
-            height: 17vw;
+            height: 22vw;
             transform: translate(0, -50%);
             border-right: 1px solid white;
             padding-right: 20px;
@@ -110,32 +183,69 @@
             border-left: 10px solid orange;
         }
 
-        h1.subhead.i0 { top: 0;}
+        h1.subhead.i0 { top: 4vw;}
 
         h2.subhead.i9 {
-          top: 11vw;
+          top: 16vw;
           background-color: rgba(0, 51, 113, 1);
           border-left: 10px solid orange;
           color:white;
           box-shadow:5px 5px 5px #004A80;
           <--text-shadow: 5px 5px 5px #FF0000;-->
          }
-        h2.subhead.i10 { top: 13vw; }
-        h2.subhead.i11 { top: 15vw; }
+        h2.subhead.i10 { top: 18vw; }
+        h2.subhead.i11 { top: 20vw; }
 
-        h1.subhead.i1 { top: 4vw;
+        h1.subhead.i1 { top: 8vw;
         }
         h1.subhead.i2 {
-          top: 8vw;
+          top: 12vw;
           background-color: rgba(255, 255, 255, 0.5);
           border-left: 10px solid white;
           color:white;
           }
+        h1.subhead.i10{top:0;}
     </style>
 </head>
 <body>
-    <div class="wrapper">
+    <div class="main">
+        <h1>那些让我们流口水的新型潜水装备...</h1>
+		<p>来自Top Gear杂志的报道 </p>
+        <h2>可穿戴智能潜水助手</h2>
+      <table width="100%" border="0" cellspacing="3px">
+  <tbody>
+    <tr>
+      <td> <p>　　DIVEVOLK®可穿戴智能潜水助手系统基于强大完善的智能手机硬件平台，结合自主研发的软件应用，为潜水员带来全新的体验。支持人机交互，触屏输入，音频输出。智能手机的全功能实现（远距离无线通讯除外）。搭建基于智能手机硬件平台的开放生态系统，大量的安全性、趣味性潜水应用程序可以基于此系统进行自由、无限拓展。紧凑轻便的设计，操作简便，轻松上手。 </p>&nbsp;</td>
+      <td><img src="./images/3-7-11.jpeg" width="300" height="150">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+        <h2>Delta 5</h2>
+		<p>　　Delta 5是一个非常可靠、耐用、顺畅的呼吸调节器。它标配有Oceanic专利动态调整技术，一经设定，就能在任何深度提供稳定的供气。它还配备了潜水及预潜开关和一个超舒适的口腔正型咬嘴。这个最新版本有一个新的，更新的全金属气动阀，能在任何情况下提供超平滑呼吸效能。</p>
+      <table width="100%" border="0" cellspacing="3px" style=" text-align:center; ">
+  <tbody>
+    <tr>
+      <td><img src="./images/3-7-21.jpg" width="200" height="150">&nbsp;</td>
+      <td><img src="./images/3-7-22.jpg" width="200" height="150">&nbsp;</td>
+		<td><img src="./images/3-7-23.jpg" width="200" height="150">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+		<h2>时尚潜水服</h2>
+		<p>　　2mm超弹光面CR，针对亚洲人体型裁剪。支持团队定制和量身定制。赋予功能以时尚，赋予海洋以时尚。</p>
+      <table width="100%" border="0" cellspacing="3px" style=" text-align:center; ">
+  <tbody>
+    <tr>
+      <td><img src="./images/3-7-31.jpg" width="200" height="200">&nbsp;</td>
+      <td><img src="./images/3-7-32.jpg" width="200" height="200">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+   </div>
+	<div class="wrapper">
         <h1 class="headline"></h1>
+        <h1 class="subhead i10"><a href="index.html">首页</a><h1>
         <h1 class="subhead i0"><a href="2_1.html">你真的了解潜水吗</a></h1>
         <h1 class="subhead i1"><a href="2_2.html">开启你的潜水之旅</a></h1>
         <h1 class="subhead i2"><a href="2_3.html">最新潜水新闻资讯</a></h1>
@@ -143,6 +253,14 @@
         <h2 class="subhead i10"><a href="3_8.html">俱乐部&出行公告</a></h2>
         <h2 class="subhead i11"><a href="3_9.html">潜水商店</a></h2>
     </div>
-
+<div class="login">
+        <input type="email" placeholder="E-Mail">
+        <input type="password" placeholder="Password">
+        <a href="#" class="button">Log In</a>
+    </div>
+<div class="upper">
+<td><img src="images/logo.png" width="65" height="80" alt=""/>&nbsp;</td>
+<h1 class="upperheadline">Love. Dive.</h1>
+</div>
 </body>
 </html>

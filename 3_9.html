@@ -2,21 +2,71 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Love. Dive.</title>
+    <title>Love. Dive.</title><link href="./css/mycss.css" rel="stylesheet" type="text/css" media="all" />
     <style>
         body {
-            background-image: url('./images/0.jpg');
+            background-image: url('./images/bg_3.jpg');
             background-size: 100% auto;
             background-repeat: no-repeat;
             background-position: center;
         }
+		.upper{
+			background-image: url('./images/translucence.png');
+            background-repeat: repeat;
+			margin: 0;
+            width: 100%;
+            height: 8%;
+			left: 50%;
+            top: 0px;
+			bottom: 0px;
+			transform: translate(-50%, 0%);
+   			position: fixed;
+        }
+
+
+		.main {
+            width: 54vw;
+            position: absolute;
+			transform: translate(45%, 82px);
+            margin: 0;
+            padding: 30px 30px;
+            background-color: white;
+            box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
+
+			background-color: rgba(0, 51, 113, 0.5);
+        }
+
+        .main h1 {
+            font-weight: 400;
+            font-size: 30px;
+			 color: white;
+			font-weight: 800;
+        }
+
+        .main h2 {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            margin: 10px 0 0 0;
+            padding: 0 0 10px 0;
+            color: orange;
+			font-weight: 600;
+            border-bottom: 3px solid orange;
+        }
+
+        .main p {
+            margin: 10px 0;
+			color:white;
+			line-height:25px ;
+        }
+
 
         .wrapper {
             margin: 0;
 
-            position: relative;
+            position: fixed;
             width: 60vw;
-            height: 17vw;
+            height: 22vw;
             left: 5%;
             top: 50%;
             transform: translate(-50%, -50%);
@@ -29,7 +79,7 @@
             right: 50%;
             top: 50%;
             width: 30vw;
-            height: 17vw;
+            height: 22vw;
             transform: translate(0, -50%);
             border-right: 1px solid white;
             padding-right: 20px;
@@ -110,12 +160,12 @@
             border-left: 10px solid orange;
         }
 
-        h1.subhead.i0 { top: 0;}
+        h1.subhead.i0 { top: 4vw;}
 
-        h2.subhead.i9 { top: 11vw; }
-        h2.subhead.i10 { top: 13vw; }
+        h2.subhead.i9 { top: 16vw; }
+        h2.subhead.i10 { top: 18vw; }
         h2.subhead.i11 {
-          top: 15vw;
+          top: 20vw;
           background-color: rgba(0, 51, 113, 1);
           border-left: 10px solid orange;
           color:white;
@@ -123,19 +173,78 @@
           <--text-shadow: 5px 5px 5px #FF0000;-->
          }
 
-        h1.subhead.i1 { top: 4vw;
+        h1.subhead.i1 { top: 8vw;
         }
         h1.subhead.i2 {
-          top: 8vw;
+          top: 12vw;
           background-color: rgba(255, 255, 255, 0.5);
           border-left: 10px solid white;
           color:white;
           }
+        h1.subhead.i10{top:0;}
     </style>
 </head>
 <body>
+	<div class="main">
+      <h1>潜水商店</h1>
+        <h2>潜水衣</h2>
+		<table width="100%" border="1" style=" text-align:center; " cellspacing="0px">
+  <tbody>
+    <tr>
+      <td><img src="./images/3-9-11.jpg" width="100" height="90">&nbsp;</td>
+      <td><img src="./images/3-9-12.jpg" width="100" height="90">&nbsp;</td>
+      <td><img src="./images/3-9-13.jpg" width="100" height="90">&nbsp;</td>
+		<td><img src="./images/3-9-14.jpg" width="100" height="90">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width=25% ><p>Scubapro NovaScotia 7.5mm Semi Dry 半干式[4990RMB]</p><a href="http://shop.big-blue.cn/goods-569-Scubapro+NovaScotia+75mm+Semi+Dry+%E7%94%B7%E5%A3%AB%E5%8D%8A%E5%B9%B2%E5%BC%8F%E6%BD%9C%E6%B0%B4.html"><img src="./images/qwgm.jpg" width="100" height="50"></a>&nbsp;</td>
+      <td width=25%  ><p>Aqua Lung Bali 3mm NEW 湿式潜水衣[1390RMB]</p><a href="http://shop.big-blue.cn/goods-524-Aqua+Lung+Bali+3mm+NEW+%E6%B9%BF%E5%BC%8F%E6%BD%9C%E6%B0%B4%E8%A1%A3.html"><img src="./images/qwgm.jpg" width="100" height="50"></a>&nbsp;</td>
+      <td width=25% ><p>Scubapro Thermal Tec 5mm 湿式潜水衣[2180RMB]</p><a href="http://shop.big-blue.cn/goods-266-Scubapro+Thermal+Tec+5mm+%E6%B9%BF%E5%BC%8F%E6%BD%9C%E6%B0%B4%E8%A1%A3.html"><img src="./images/qwgm.jpg" width="100" height="50"></a>&nbsp;</td>
+		<td width=25% ><p>Scubapro Profile 0.5mm 湿式潜水衣[808RMB]</p><a href=" http://shop.big-blue.cn/goods-268-Scubapro+Profile+05mm+%E6%B9%BF%E5%BC%8F%E6%BD%9C%E6%B0%B4%E8%A1%A3%EF%BC%88%E8%80%81%E6%AC%BE%EF%BC%89.html"><img src="./images/qwgm.jpg" width="100" height="50"></a>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+		   <h2>面镜&呼吸管</h2>
+		<table width="100%" border="1" style=" text-align:center; " cellspacing="0px">
+  <tbody>
+    <tr>
+      <td><img src="./images/3-9-21.jpg" width="100" height="90">&nbsp;</td>
+      <td><img src="./images/3-9-22.jpg" width="100" height="90">&nbsp;</td>
+      <td><img src="./images/3-9-23.jpg" width="100" height="90">&nbsp;</td>
+		<td><img src="./images/3-9-24.jpg" width="100" height="90">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width=25% ><p>TUSA M1002 　潜水面镜[590RMB]</p><a href="http://shop.big-blue.cn/goods-513-TUSA+M1002+%E6%BD%9C%E6%B0%B4%E9%9D%A2%E9%95%9C.html"><img src="./images/qwgm.jpg" width="100" height="50"></a>&nbsp;</td>
+      <td width=25%  ><p>Scubapro Full Face 全面镜[3490RMB]</p><a href="http://shop.big-blue.cn/goods-179-Scubapro+Full+Face+%E5%85%A8%E9%9D%A2%E9%95%9C.html"><img src="./images/qwgm.jpg" width="100" height="50"></a>&nbsp;</td>
+      <td width=25% ><p>Mares ERGO Dry全干式呼吸管[239RMB]</p><a href="http://shop.big-blue.cn/goods-567-Mares+ERGO+Dry+%E5%85%A8%E5%B9%B2%E5%BC%8F%E5%91%BC%E5%90%B8%E7%AE%A1.html"><img src="./images/qwgm.jpg" width="100" height="50"></a>&nbsp;</td>
+		<td width=25% ><p>Scubapro Phoenix2全干式呼吸管[209RMB] </p><a href="http://shop.big-blue.cn/goods-184-Scubapro+Phoenix2+%E5%85%A8%E5%B9%B2%E5%BC%8F%E5%91%BC%E5%90%B8%E7%AE%A1.html"><img src="./images/qwgm.jpg" width="100" height="50"></a>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+		 <h2>气瓶&调节器</h2>
+		<table width="100%" border="1" style=" text-align:center; " cellspacing="0px">
+  <tbody>
+    <tr>
+      <td><img src="./images/3-9-31.jpg" width="100" height="90">&nbsp;</td>
+      <td><img src="./images/3-9-32.jpg" width="100" height="90">&nbsp;</td>
+      <td><img src="./images/3-9-33.jpg" width="100" height="90">&nbsp;</td>
+		<td><img src="./images/3-9-34.jpg" width="100" height="90">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width=25% ><p>LUXFER Aluminum Cylinder 12L/S80 潜水气瓶[2280RMB]</p><a href="http://shop.big-blue.cn/goods-496-LUXFER+Aluminum+Cylinder+12LS80+%E6%BD%9C%E6%B0%B4%E6%B0%94%E7%93%B6.html"><img src="./images/qwgm.jpg" width="100" height="50"></a>&nbsp;</td>
+      <td width=25%  ><p>Apeks TEK 3 Set 双瓶调节器组合套装[15630RMB]</p><a href="http://shop.big-blue.cn/goods-386-Apeks+TEK+3+Set+%E5%8F%8C%E7%93%B6%E8%B0%83%E8%8A%82%E5%99%A8%E7%BB%84%E5%90%88%E5%A5%97%E8%A3%85.html"><img src="./images/qwgm.jpg" width="100" height="50"></a>&nbsp;</td>
+      <td width=25% ><p>SAS   Neo-R  II  M 　 调节器套装[3680RMB]</p><a href="http://shop.big-blue.cn/goods-456-SAS+Neo-R+II+M+%E8%B0%83%E8%8A%82%E5%99%A8%E5%A5%97%E8%A3%85.html"><img src="./images/qwgm.jpg" width="100" height="50"></a>&nbsp;</td>
+		<td width=25% ><p>Apeks Sidemount Set 侧挂调节器套装 [11900RMB]</p><a href="http://shop.big-blue.cn/goods-385-Apeks+Sidemount+Set+%E4%BE%A7%E6%8C%82%E8%B0%83%E8%8A%82%E5%99%A8%E5%A5%97%E8%A3%85.html"><img src="./images/qwgm.jpg" width="100" height="50"></a>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+
+</div>
     <div class="wrapper">
         <h1 class="headline"></h1>
+        <h1 class="subhead i10"><a href="index.html">首页</a><h1>
         <h1 class="subhead i0"><a href="2_1.html">你真的了解潜水吗</a></h1>
         <h1 class="subhead i1"><a href="2_2.html">开启你的潜水之旅</a></h1>
         <h1 class="subhead i2"><a href="2_3.html">最新潜水新闻资讯</a></h1>
@@ -143,6 +252,14 @@
         <h2 class="subhead i10"><a href="3_8.html">俱乐部&出行公告</a></h2>
         <h2 class="subhead i11">潜水商店</h2>
     </div>
-
+<div class="login">
+        <input type="email" placeholder="E-Mail">
+        <input type="password" placeholder="Password">
+        <a href="#" class="button">Log In</a>
+    </div>
+<div class="upper">
+<td><img src="images/logo.png" width="65" height="80" alt=""/>&nbsp;</td>
+<h1 class="upperheadline">Love. Dive.</h1>
+</div>
 </body>
 </html>
