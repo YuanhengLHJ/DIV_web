@@ -30,7 +30,7 @@
         .nav, .nav ul {
             list-style-type: none;
         }
-        
+
         .nav > li {
             height: 4vw;
             padding: 0 20px;
@@ -56,17 +56,25 @@
             font-weight: 400;
             transition: background-color 1s, border-left 1s;
         }
-        
+
         .nav li:hover {
             background-color: rgba(255, 255, 255, 0.5);
             border-left: 10px solid white;
         }
 
         .nav li.selected {
-            background-color: rgba(0, 51, 113, 0.5);
+            background-color: rgba(0, 51, 113, 1);
             border-left: 10px solid orange;
             color:white;
+            box-shadow:5px 5px 5px #004A80;
         }
+
+        .nav li.isselected{
+          background-color: rgba(255, 255, 255, 0.5);
+          border-left: 10px solid white;
+          color:white;
+        }
+
 
         .nav a {
             text-decoration: none;
@@ -96,7 +104,7 @@
 
             list-style-type: none;
         }
-        
+
         .timeline li.cell {
             color: black;
             position: relative;
@@ -147,14 +155,14 @@
 <body>
     <div class="sidebar">
         <ul class="nav">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="2_1.html">你真的了解潜水吗</a></li>
+            <li><a href="index.html">首页</a></li>
+            <li class="isselected"><a href="2_1.html">你真的了解潜水吗</a></li>
             <ul>
-                <li class="selected"><a href="#">潜水的历史</a></li>
+                <li class="selected">潜水的历史</li>
                 <li><a href="3_2.html">准备与原则</a></li>
                 <li><a href="3_3.html">潜水对身体机能的影响</a></li>
             </ul>
-            
+
             <li><a href="2_2.html">开启你的潜水之旅</a></li>
             <!--
             <ul>
@@ -208,7 +216,7 @@
         </li>
     </ul>
 
-    
+
         <!--
         <h1>潜水发展</h1>
         <p>
@@ -221,10 +229,9 @@
             据科学论证，水对人体的均衡压力有助于血液循环，水下长时间的吸氧可以有效地杀死癌细胞，并抑制癌细胞的扩散。
             但因为潜水的费用较高，一般人承受不了。虽然基础培训费只有两千块左右，但相继而来的配置器材与旅费却不是人人都能消化的。
             一套好的装备，普通的两、三万，高级的十几万。如果想去好的自然海域，近的有马来西亚、泰国，远的有澳大利亚、红海等等。
-           
+
         </p>
     -->
 
 </body>
 </html>
-

@@ -35,7 +35,7 @@
         .nav, .nav ul {
             list-style-type: none;
         }
-        
+
         .nav > li {
             height: 4vw;
             padding: 0 20px;
@@ -61,16 +61,23 @@
             font-weight: 400;
             transition: background-color 1s, border-left 1s;
         }
-        
+
         .nav li:hover {
             background-color: rgba(255, 255, 255, 0.5);
             border-left: 10px solid white;
         }
 
         .nav li.selected {
-            background-color: rgba(0, 51, 113, 0.5);
+            background-color: rgba(0, 51, 113, 1);
             border-left: 10px solid orange;
             color:white;
+            box-shadow:5px 5px 5px #004A80;
+        }
+
+        .nav li.isselected{
+          background-color: rgba(255, 255, 255, 0.5);
+          border-left: 10px solid white;
+          color:white;
         }
 
         .nav a {
@@ -113,14 +120,14 @@
 
     <div class="sidebar">
         <ul class="nav">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="2_1.html">你真的了解潜水吗</a></li>
+            <li><a href="index.html">首页</a></li>
+            <li class="isselected"><a href="2_1.html">你真的了解潜水吗</a></li>
             <ul>
                 <li><a href="3_1.html">潜水的历史</a></li>
                 <li><a href="3_2.html">准备与原则</a></li>
-                <li class="selected"><a href="3_3.html">潜水对身体机能的影响</a></li>
+                <li class="selected">潜水对身体机能的影响</li>
             </ul>
-            
+
             <li><a href="2_2.html">开启你的潜水之旅</a></li>
             <li><a href="2_3.html">最新潜水新闻资讯</a></li>
         </ul>
@@ -169,4 +176,3 @@
    </div>
 </body>
 </html>
-
