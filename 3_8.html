@@ -2,13 +2,62 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Love. Dive.</title>
+    <title>Love. Dive.</title><link href="./css/mycss.css" rel="stylesheet" type="text/css" media="all" />
     <style>
         body {
-            background-image: url('./images/0.jpg');
+            background-image: url('./images/bg_3.jpg');
             background-size: 100% auto;
             background-repeat: no-repeat;
             background-position: center;
+        }
+		.upper{ 
+			background-image: url('./images/translucence.png');
+            background-repeat: repeat;
+			margin: 0;
+            width: 100%;
+            height: 8%;
+			left: 50%;
+            top: 0px;
+			bottom: 0px;
+			transform: translate(-50%, 0%);
+   			position: fixed;
+        }
+
+
+		.main {
+            width: 54vw;
+            position: absolute;
+			transform: translate(45%, 82px);
+            margin: 0;
+            padding: 30px 30px;
+            background-color: white;
+            box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
+            
+			background-color: rgba(0, 51, 113, 0.5);
+        }
+
+        .main h1 {
+            font-weight: 400;
+            font-size: 30px;
+			 color: white;
+			font-weight: 800;
+        }
+
+        .main h2 {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            margin: 10px 0 0 0;
+            padding: 0 0 10px 0;
+            color: orange;
+			font-weight: 600;
+            border-bottom: 3px solid orange;
+        }
+
+        .main p {
+            margin: 10px 0;
+			color:white;
+			line-height:25px ;
         }
 
         .wrapper {
@@ -134,6 +183,64 @@
     </style>
 </head>
 <body>
+	<div class="main">
+      <h1>潜水俱乐部</h1>
+		<p>本网站提供了主要城市的俱乐部索引。赶快加入潜水爱好者的大家庭，一起潜水的乐趣吧！</p>
+        <h2>北京</h2>
+		<table width="100%" border="1" style=" text-align:center; " cellspacing="0px">
+  <tbody>
+    <tr>
+      <td><img src="./images/3-8-b1.jpg" width="140" height="90">&nbsp;</td>
+      <td><img src="./images/3-8-b2.jpg" width="140" height="90">&nbsp;</td>
+      <td><img src="./images/3-8-b3.jpg" width="140" height="90">&nbsp;</td>
+		<td><img src="./images/3-8-b4.jpg" width="140" height="90">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width=25% ><p>龙缘海洋潜水俱乐部</p><a href="http://www.dragondiving.com/"><img src="./images/qqkk.jpg" width="100" height="50"></a>&nbsp;</td>
+      <td width=25%  ><p>深海蓝潜水运动发展公司</p><a href="http://www.bjdiving.org/"><img src="./images/qqkk.jpg" width="100" height="50"></a>&nbsp;</td>
+      <td width=25% ><p>海豚号五星潜水中心</p><a href="http://www.bjdolphin.com/"><img src="./images/qqkk.jpg" width="100" height="50"></a>&nbsp;</td>
+		<td width=25% ><p>北京海澜潜水装备公司</p><a href="http://www.hailandive.cn/index.html"><img src="./images/qqkk.jpg" width="100" height="50"></a>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+		  <h2>上海</h2>
+		<table width="100%" border="1" style=" text-align:center; " cellspacing="0px">
+  <tbody>
+    <tr>
+      <td><img src="./images/3-8-s1.jpg" width="140" height="90">&nbsp;</td>
+      <td><img src="./images/3-8-s2.jpg" width="140" height="90">&nbsp;</td>
+      <td><img src="./images/3-8-s3.jpg" width="140" height="90">&nbsp;</td>
+		<td><img src="./images/3-8-s4.jpg" width="140" height="90">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width=25% ><p>悠蓝国际潜水俱乐部</p><a href="http://www.big-blue.cn/"><img src="./images/qqkk.jpg" width="100" height="50"></a>&nbsp;</td>
+      <td width=25%  ><p>海上星（国际）潜水俱乐部</p><a href="http://sdc.ssc.sh.cn"><img src="./images/qqkk.jpg" width="100" height="50"></a>&nbsp;</td>
+      <td width=25% ><p>Atlantis Diving</p><a href="http://www.atlantisdiving.cn/"><img src="./images/qqkk.jpg" width="100" height="50"></a>&nbsp;</td>
+		<td width=25% ><p>上海联合水肺潜水俱乐部</p><a href="http://www.unscuba.com/"><img src="./images/qqkk.jpg" width="100" height="50"></a>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+		
+		 <h2>粤港澳</h2>
+		<table width="100%" border="1" style=" text-align:center; " cellspacing="0px">
+  <tbody>
+    <tr>
+      <td><img src="./images/3-8-y1.jpg" width="140" height="90">&nbsp;</td>
+      <td><img src="./images/3-8-y2.jpg" width="140" height="90">&nbsp;</td>
+      <td><img src="./images/3-8-y3.jpg" width="140" height="90">&nbsp;</td>
+		<td><img src="./images/3-8-y4.jpg" width="140" height="90">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width=25% ><p>PDStar Diving 帕迪潜水</p><a href="http://www.pdstar.com/"><img src="./images/qqkk.jpg" width="100" height="50"></a>&nbsp;</td>
+      <td width=25%  ><p>凯欣亚户外运动</p><a href="http://www.gaia-adv.com/"><img src="./images/qqkk.jpg" width="100" height="50"></a>&nbsp;</td>
+      <td width=25% ><p>雅高潜水会</p><a href="http://www.divingargos.com/index.html"><img src="./images/qqkk.jpg" width="100" height="50"></a>&nbsp;</td>
+		<td width=25% ><p>深圳追浪潜行</p><a href="http://www.zldive.com/"><img src="./images/qqkk.jpg" width="100" height="50"></a>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+		
+       
+</div>
     <div class="wrapper">
         <h1 class="headline"></h1>
         <h1 class="subhead i0"><a href="2_1.html">你真的了解潜水吗</a></h1>
@@ -143,6 +250,14 @@
         <h2 class="subhead i10">俱乐部&出行公告</h2>
         <h2 class="subhead i11"><a href="3_9.html">潜水商店</a></h2>
     </div>
-
+<div class="login">
+        <input type="email" placeholder="E-Mail">
+        <input type="password" placeholder="Password">
+        <a href="#" class="button">Log In</a>
+    </div>
+<div class="upper">
+<td><img src="images/logo.png" width="65" height="80" alt=""/>&nbsp;</td>
+<h1 class="upperheadline">Love. Dive.</h1>
+</div>
 </body>
 </html>
