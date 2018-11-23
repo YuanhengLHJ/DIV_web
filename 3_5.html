@@ -2,16 +2,63 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Love. Dive.</title>
+    <title>Love. Dive.</title><link href="./css/mycss.css" rel="stylesheet" type="text/css" media="all" />
     <style>
         body {
-            background-image: url('./images/0.jpg');
+            background-image: url('./images/bg_2.jpg');
             background-size: 100% auto;
             background-repeat: no-repeat;
             background-position: center;
         }
+		.upper{ 
+			background-image: url('./images/translucence.png');
+            background-repeat: repeat;
+			margin: 0;
+            width: 100%;
+            height: 8%;
+			left: 50%;
+            top: 0px;
+			bottom: 0px;
+			transform: translate(-50%, 0%);
+   			position: fixed;
+        }
+		.main {
+            width: 54vw;
+            position: absolute;
+			transform: translate(45%, 82px);
+            margin: 0;
+            padding: 30px 30px;
+            background-color: white;
+            box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.5);
+            
+			background-color: rgba(0, 51, 113, 0.5);
+        }
 
-        .wrapper {
+        .main h1 {
+            font-weight: 400;
+            font-size: 30px;
+			 color: white;
+			font-weight: 800;
+        }
+
+        .main h2 {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            margin: 0px 0 0 0;
+            padding: 0 0 10px 0;
+            color: orange;
+			font-weight: 600;
+            border-bottom: 3px solid orange;
+        }
+
+        .main p {
+            margin: 10px 0;
+			color:white;
+			line-height:20px ;
+        }
+
+         .wrapper {
             margin: 0;
 
             position: relative;
@@ -133,7 +180,84 @@
     </style>
 </head>
 <body>
-    <div class="wrapper">
+	<div class="main">
+      <h1>学习潜水课程，掌握潜水技能！</h1>
+		<table width="100%" border="0" cellspacing="5px">
+  <tbody>
+    <tr>
+      <td><p>　　世界范围内，无论是潜水中心，教练还是课程，都默认由PADI协会进行官方管理。PADI为了其培训机构的健康发展，和对潜水活动安全的考量，在认证教练资格时，规定了严格的培训和残酷的考试。而PADI也会对其麾下的教练每年进行审核，在接到学生投诉时，匿名进行调查。这使得专业的教练，在执行培训课程时，都会按照PADI的统一标准进行。本网站提供专业PADI课程索引。</p>&nbsp;</td>
+      <td><a href="https://www.padi.com/"><img src="./images/padi.jpg" width="80" height="100"></a>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+		
+        <h2>体验课程</h2>
+		<table width="100%" border="1" style=" text-align:center; " cellspacing="0px">
+  <tbody>
+    <tr>
+      <td><img src="./images/ty-1.jpg" width="140" height="90">&nbsp;</td>
+      <td><img src="./images/ty-2.jpg" width="140" height="90">&nbsp;</td>
+      <td><img src="./images/ty-3.jpg" width="140" height="90">&nbsp;</td>
+		<td><img src="./images/ty-4.jpg" width="140" height="90">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><p>体验水肺潜水</p><a href="http://sp.padi.com.cn/scuba/padi-courses/diver-courses/view-all-padi-courses/discover-scuba-diving.aspx"><img src="./images/qwxx.jpg" width="100" height="50"></a>&nbsp;</td>
+      <td><p>泡泡小勇士 8 岁以上</p><a href="http://sp.padi.com.cn/scuba/padi-courses/diver-courses/view-all-padi-courses/bubblemaker-8yrsplus.aspx"><img src="./images/qwxx.jpg" width="100" height="50"></a>&nbsp;</td>
+      <td><p>海豹队（ 8 岁以上）</p><a href="http://sp.padi.com.cn/scuba/padi-courses/diver-courses/view-all-padi-courses/seal-team-8yrsplus.aspx"><img src="./images/qwxx.jpg" width="100" height="50"></a>&nbsp;</td>
+		<td><p>PADI 浮潜潜水员</p><a href="http://sp.padi.com.cn/scuba/padi-courses/diver-courses/view-all-padi-courses/skin-diver.aspx"><img src="./images/qwxx.jpg" width="100" height="50"></a>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+		 <h2>初级&进阶课程</h2>
+		<table width="100%" border="1" style=" text-align:center; " cellspacing="0px">
+  <tbody>
+    <tr>
+      <td><img src="./images/cj-1.jpg" width="140" height="90">&nbsp;</td>
+      <td><img src="./images/cj-2.jpg" width="140" height="90">&nbsp;</td>
+      <td><img src="./images/cj-3.jpg" width="140" height="90">&nbsp;</td>
+		<td><img src="./images/cj-4.jpg" width="140" height="90">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><p>开放水域潜水员</p><a href="http://sp.padi.com.cn/scuba/padi-courses/diver-courses/view-all-padi-courses/open-water-diver.aspx"><img src="./images/qwxx.jpg" width="100" height="50"></a>&nbsp;</td>
+      <td><p>水肺潜水员</p><a href="http://sp.padi.com.cn/scuba/padi-courses/diver-courses/view-all-padi-courses/adventure-diver.aspx"><img src="./images/qwxx.jpg" width="100" height="50"></a>&nbsp;</td>
+      <td><p>PADI 探险潜水员</p><a href="http://sp.padi.com.cn/scuba/padi-courses/diver-courses/view-all-padi-courses/seal-team-8yrsplus.aspx"><img src="./images/qwxx.jpg" width="100" height="50"></a>&nbsp;</td>
+		<td><p>进阶开放水域潜水员</p><a href="http://sp.padi.com.cn/scuba/padi-courses/diver-courses/view-all-padi-courses/advanced-open-water-diver.aspx"><img src="./images/qwxx.jpg" width="100" height="50"></a>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+		
+		<h2>专业课程</h2>
+		<table width="100%" border="1" style=" text-align:center; " cellspacing="0px">
+  <tbody>
+    <tr>
+      <td><img src="./images/zy-1.jpg" width="140" height="90">&nbsp;</td>
+      <td><img src="./images/zy-2.jpg" width="140" height="90">&nbsp;</td>
+      <td><img src="./images/zy-3.jpg" width="140" height="90">&nbsp;</td>
+		<td><img src="./images/zy-4.jpg" width="140" height="90">&nbsp;</td>
+    </tr>
+    <tr>
+      <td><p>高海拔潜水员课程</p><a href="http://sp.padi.com.cn/scuba/padi-courses/diver-courses/view-all-padi-courses/altitude-diver.aspx"><img src="./images/qwxx.jpg" width="100" height="50"></a>&nbsp;</td>
+      <td><p>救援潜水员</p><a href="http://sp.padi.com.cn/scuba/padi-courses/diver-courses/view-all-padi-courses/rescue-diver.aspx"><img src="./images/qwxx.jpg" width="100" height="50"></a>&nbsp;</td>
+      <td><p>数码水底摄影师课程</p><a href="http://sp.padi.com.cn/scuba/padi-courses/diver-courses/view-all-padi-courses/digital-underwater-photographer.aspx"><img src="./images/qwxx.jpg" width="100" height="50"></a>&nbsp;</td>
+		<td><p>鱼类辨识课程</p><a href="http://sp.padi.com.cn/scuba/padi-courses/diver-courses/view-all-padi-courses/aware-fish-id.aspx"><img src="./images/qwxx.jpg" width="100" height="50"></a>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+		<h2>专业理论</h2>
+		<table width="100%" border="1" style=" text-align:center; " cellspacing="0px">
+  <tbody>
+    <tr>
+      <td><p>潜水理论在线课程</p><a href="https://apps.padi.com/scuba-diving/elearning/purchasecourse.aspx?CourseType=dt"><img src="./images/qwxx.jpg" width="100" height="50"></a>&nbsp;</td>
+      <td><p>开放水域理论</p><a href="https://apps.padi.com/scuba-diving/elearning/purchasecourse.aspx?CourseType=ow"><img src="./images/qwxx.jpg" width="100" height="50"></a>&nbsp;</td>
+      <td><p>水肺预习理论</p><a href="https://apps.padi.com/scuba-diving/elearning/purchasecourse.aspx?CourseType=stu"><img src="./images/qwxx.jpg" width="100" height="50"></a>&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+       
+</div>
+     <div class="wrapper">
         <h1 class="headline"></h1>
         <h1 class="subhead i0"><a href="2_1.html">你真的了解潜水吗</a></h1>
         <h1 class="subhead i1"><a href="2_2.html">开启你的潜水之旅</a></h1>
@@ -142,6 +266,14 @@
         <h2 class="subhead i8"><a href="3_6.html">潜水定位</a></h2>
         <h1 class="subhead i2"><a href="2_3.html">最新潜水新闻资讯</a></h1>
     </div>
-
+<div class="login">
+        <input type="email" placeholder="E-Mail">
+        <input type="password" placeholder="Password">
+        <a href="#" class="button">Log In</a>
+    </div>
+<div class="upper">
+<td><img src="images/logo.png" width="65" height="80" alt=""/>&nbsp;</td>
+<h1 class="upperheadline">Love. Dive.</h1>
+</div>
 </body>
 </html>
