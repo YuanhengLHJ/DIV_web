@@ -14,72 +14,125 @@
             background-position: center;
         }
 
-        .sidebar {
+        .wrapper {
+            margin: 0;
             position: fixed;
-            color: white;
+            width: 60vw;
+            height: 22vw;
+            left: 5%;
             top: 50%;
-            transform: translateY(-50%);
+            transform: translate(-50%, -50%);
         }
 
-        .nav {
-            margin: 0 0 0 40px;
-            padding: 0;
-            border-left: 1px solid white;
+        h1.headline {
+            margin: 0;
+
+            position: absolute;
+            right: 50%;
+            top: 50%;
+            width: 30vw;
+            height: 22vw;
+            transform: translate(0, -50%);
+            border-right: 1px solid white;
+            padding-right: 20px;
+
+
+            color: white;
+            font-size: 60px;
+            line-height: 12vw;
+            text-align: right;
+            font-style: italic;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 100;
         }
 
-        .nav, .nav ul {
-            list-style-type: none;
-        }
+        h1.subhead {
+            margin: 0;
 
-        .nav > li {
+            position: absolute;
+            left: 50%;
+
             height: 4vw;
-            padding: 0 20px;
+
+            padding-left: 20px;
+            padding-right: 20px;
+
+            border-left: 0 solid white;
+
             font-size: 20px;
             line-height: 4vw;
             text-align: left;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-weight: 400;
+
             transition: background-color 1s, border-left 1s;
         }
 
-        .nav ul {
-            padding: 0;
-        }
+        h2.subhead {
+            margin: 0;
 
-        .nav ul li {
+            position: absolute;
+            left: 50%;
+
             height: 2vw;
-            padding: 0 20px;
-            font-size: 14px;
+
+            padding-left: 20px;
+            padding-right: 20px;
+
+            border-left: 0 solid white;
+
+            font-size: 10px;
             line-height: 2vw;
             text-align: left;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-weight: 400;
+
             transition: background-color 1s, border-left 1s;
         }
 
-        .nav li:hover {
+        h1.subhead a {
+            color: white;
+            opacity: 0.8;
+            text-decoration: none;
+        }
+
+        h2.subhead a {
+            color: white;
+            opacity: 0.8;
+            text-decoration: none;
+        }
+
+        h1.subhead:hover {
             background-color: rgba(255, 255, 255, 0.5);
             border-left: 10px solid white;
         }
 
-        .nav li.selected {
-            background-color: rgba(0, 51, 113, 1);
+        h2.subhead:hover {
+            background-color: rgba(255, 255, 255, 0.5);
             border-left: 10px solid orange;
-            color:white;
-            box-shadow:5px 5px 5px #004A80;
         }
 
-        .nav li.isselected{
+        h1.subhead.i0 {
+          top: 4vw;
           background-color: rgba(255, 255, 255, 0.5);
           border-left: 10px solid white;
           color:white;
         }
 
-
-        .nav a {
-            text-decoration: none;
-            color: white;
+        h2.subhead.i3 {
+          top: 8vw;
+          background-color: rgba(0, 51, 113, 1);
+          border-left: 10px solid orange;
+          color:white;
+          box-shadow:5px 5px 5px #004A80;
+          <--text-shadow: 5px 5px 5px #FF0000;-->
         }
+        h2.subhead.i4 { top: 10vw; }
+        h2.subhead.i5 { top: 12vw; }
+
+        h1.subhead.i1 { top: 14vw; }
+        h1.subhead.i2 { top: 18vw; }
+        h1.subhead.i10{top: 0;}
 
         .line {
             position: fixed;
@@ -153,34 +206,16 @@
     </style>
 </head>
 <body>
-    <div class="sidebar">
-        <ul class="nav">
-            <li><a href="index.html">首页</a></li>
-            <li class="isselected"><a href="2_1.html">你真的了解潜水吗</a></li>
-            <ul>
-                <li class="selected">潜水的历史</li>
-                <li><a href="3_2.html">准备与原则</a></li>
-                <li><a href="3_3.html">潜水对身体机能的影响</a></li>
-            </ul>
-
-            <li><a href="2_2.html">开启你的潜水之旅</a></li>
-            <!--
-            <ul>
-                <li><a href="#">潜友潜水日程分享</a></li>
-                <li><a href="#">潜水课程</a></li>
-                <li><a href="#">潜水定位</a></li>
-            </ul>
-            -->
-            <li><a href="2_3.html">最新潜水新闻资讯</a></li>
-            <!--
-            <ul>
-                <li><a href="#">新装备测评</a></li>
-                <li><a href="#">俱乐部 & 新闻公告</a></li>
-                <li><a href="#">潜水商店</a></li>
-            </ul>
-            -->
-        </ul>
-    </div>
+  <div class="wrapper">
+      <h1 class="headline"></h1>
+      <h1 class="subhead i10"><a href="index.html">首页</a></h1>
+      <h1 class="subhead i0"><a href="2_1.html">你真的了解潜水吗</a></h1>
+      <h2 class="subhead i3">潜水运动的故事</h2>
+      <h2 class="subhead i4"><a href="3_2.html">准备与原则</a></h2>
+      <h2 class="subhead i5"><a href="3_3.html">潜水对身体机能的影响</a></h2>
+      <h1 class="subhead i1"><a href="2_2.html">开启你的潜水之旅</a></h1>
+      <h1 class="subhead i2"><a href="2_3.html">最新潜水新闻资讯</a></h1>
+  </div>
 
     <div class="line"></div>
     <ul class="timeline">
