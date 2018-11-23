@@ -79,18 +79,24 @@
     height: 58px;
 }
 .menu li {
-   
-    min-width: 160px;
+  
+    min-width: 350px;
+    background-color: rgba(196, 239, 252, 0.5);
+    text-shadow:rgba(0, 0, 51, 113) 1px 1px 1px
 }
 
 .menu > li {
+    transform: translate(20px, -76px);
 	display: block;
 	float: left;
 	position: relative;
-	left: -30px;
-	font-size: 28px;
+	left: 030px;
+    font-size: 28px;
+    line-height: 54px;
 	font-family: 微软雅黑,宋体;
-	color: #CCC;
+    color: white;
+    background-color: rgba(1, 51, 113, 0);
+    text-shadow:#000 3px 4px 5px
 }
 
 .menu a {
@@ -104,21 +110,35 @@
     text-decoration: none;
     text-transform: uppercase;
 }
+.menu p {
+    border-left: 3px solid rgba(0, 0, 0, 0);
+    color: #fff;
+    display: block;
+    font-family: 'Lucida Console';
+    font-size: 18px;
+    line-height: 24px;
+
+    text-decoration: none;
+    text-shadow:rgba(0, 0, 51, 113) 1px 1px 1px
+    
+}
 
 /* onhover styles */
 .menu li:hover > a {
     border-radius: 5px 0 0 0;
-    border-left: 3px solid #C4302B;
-    color: #C4302B;
+    border-left: 3px solid orange;
+    color: orange;
 }
 
 /* submenu styles */
 .submenu {
-    left: 0;
+    transform: translate(-50px, 0px);
+    background-color: rgba(0, 51, 113, 0.5);
+    left: -10px;
     max-height: 0;
     position: absolute;
     top: 100%;
-    z-index: 0;
+  
 
     -webkit-perspective: 400px;
     -moz-perspective: 400px;
@@ -175,27 +195,7 @@
     -o-transition-delay: 100ms;
     transition-delay: 100ms;
 }
-.menu li:hover .submenu li:nth-child(4) {
-    -webkit-transition-delay: 150ms;
-    -moz-transition-delay: 150ms;
-    -ms-transition-delay: 150ms;
-    -o-transition-delay: 150ms;
-    transition-delay: 150ms;
-}
-.menu li:hover .submenu li:nth-child(5) {
-    -webkit-transition-delay: 200ms;
-    -moz-transition-delay: 200ms;
-    -ms-transition-delay: 200ms;
-    -o-transition-delay: 200ms;
-    transition-delay: 200ms;
-}
-.menu li:hover .submenu li:nth-child(6) {
-    -webkit-transition-delay: 250ms;
-    -moz-transition-delay: 250ms;
-    -ms-transition-delay: 250ms;
-    -o-transition-delay: 250ms;
-    transition-delay: 250ms;
-}
+
 
 
 .submenu li:nth-child(1) {
@@ -219,90 +219,9 @@
     -o-transition-delay: 250ms;
     transition-delay: 250ms;
 }
-.submenu li:nth-child(4) {
-    -webkit-transition-delay: 200ms;
-    -moz-transition-delay: 200ms;
-    -ms-transition-delay: 200ms;
-    -o-transition-delay: 200ms;
-    transition-delay: 200ms;
-}
-.submenu li:nth-child(5) {
-    -webkit-transition-delay: 150ms;
-    -moz-transition-delay: 150ms;
-    -ms-transition-delay: 150ms;
-    -o-transition-delay: 150ms;
-    transition-delay: 150ms;
-}
-.submenu li:nth-child(6) {
-    -webkit-transition-delay: 100ms;
-    -moz-transition-delay: 100ms;
-    -ms-transition-delay: 100ms;
-    -o-transition-delay: 100ms;
-    transition-delay: 100ms;
-}
-
-.menu1 {
-    height: 58px;
-}
-.menu1 li {
-   
-    min-width: 160px;
-}
-
-.menu1 > li {
-	display: block;
-	float: left;
-	position: relative;
-	left: -30px;
-	font-size: 28px;
-	font-family:黑体;
-	color: #060;
-}
-
-.menu1 a {
-    border-left: 3px solid rgba(0, 0, 0, 0);
-    color: #fff;
-    display: block;
-    font-family: 'Lucida Console';
-    font-size: 18px;
-    line-height: 20px;
-    padding: 0 25px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-/* onhover styles */
-.menu1 li:hover > a {
-    border-radius: 5px 0 0 0;
-    border-left: 3px solid #C4302B;
-    color: #C4302B;
-}
-
-/* submenu styles */
-.submenu {
-    left: 0;
-    max-height: 0;
-    position: absolute;
-    top: 100%;
-    z-index: 0;
-
-    -webkit-perspective: 400px;
-    -moz-perspective: 400px;
-    -ms-perspective: 400px;
-    -o-perspective: 400px;
-    perspective: 400px;
-}
 
 
-.menu1 > li:hover .submenu li, .menu1 > li:focus .submenu li {
-    opacity: 1;
 
-    -webkit-transform: none;
-    -moz-transform: none;
-    -ms-transform: none;
-    -o-transform: none;
-    transform: none;
-}
 
 /////////////////////轮播图/////////////////////////////////
 * {
